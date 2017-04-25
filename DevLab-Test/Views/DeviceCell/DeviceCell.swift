@@ -45,7 +45,7 @@ class DeviceCell: UITableViewCell {
     // MARK: Configuration
 
     func configure(with viewModel: DeviceViewModel?) {
-        guard let device = device else {
+        guard let viewModel = viewModel else {
             /// Remove Data
             iconImageView.image = nil
             identifierLabel.text = nil
