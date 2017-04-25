@@ -56,10 +56,10 @@ enum DeviceType {
 // MARK: Model
 
 struct Device {
-    var image: UIImage = UIImage(named: "icon-device")!
-    var identifier: String
-    var make: String
-    var model: String
-    var os: DeviceOS
-    var type: DeviceType
+    var image: UIImage? = nil
+    var identifier: String = "Banana"
+    var make: String = "Apple"
+    var model: String = "iPhone 6"
+    var os: DeviceOS = .iOS
+    var type: DeviceType = .Phone
 }
