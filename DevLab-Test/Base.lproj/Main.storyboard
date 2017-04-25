@@ -1,81 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KvH-RC-vQo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ztm-gU-mxN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main Tab-->
+        <scene sceneID="FQr-yo-cID">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="DevLab_Test" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTy-Ga-dfu">
-                                <rect key="frame" x="110" y="259" width="154" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.41568627450000001" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="K03-LH-h3f"/>
-                                    <constraint firstAttribute="width" secondItem="vTy-Ga-dfu" secondAttribute="height" multiplier="3.5:1" id="oIn-Dl-GRn"/>
-                                </constraints>
-                                <state key="normal" title="Checkout Devices">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="H8V-aH-Gp9" kind="show" id="VBk-XA-f7h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-Wd-E2f">
-                                <rect key="frame" x="110.5" y="363" width="154" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.41568627450000001" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="QaK-Jb-sgv"/>
-                                    <constraint firstAttribute="width" secondItem="iZH-Wd-E2f" secondAttribute="height" multiplier="3.5:1" id="k8t-vw-ngg"/>
-                                </constraints>
-                                <state key="normal" title="Return Devices">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="gZc-yM-5dZ" kind="show" id="lhS-c3-xzr"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="vTy-Ga-dfu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-52.5" id="7ST-DF-X3s"/>
-                            <constraint firstItem="vTy-Ga-dfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8re-7q-xb8"/>
-                            <constraint firstItem="iZH-Wd-E2f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="51.5" id="b7y-ir-rZP"/>
-                            <constraint firstItem="iZH-Wd-E2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qH7-m7-ym0"/>
-                            <constraint firstItem="iZH-Wd-E2f" firstAttribute="top" secondItem="vTy-Ga-dfu" secondAttribute="bottom" constant="60" id="sWB-iT-0CB"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="DevLab Sample" id="b3h-hw-ash"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController title="Main Tab" id="Ztm-gU-mxN" customClass="HomeViewController" customModule="DevLab_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="CF1-sz-lOI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.35686274509999999" green="0.69411764710000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ROh-Hx-bG5" kind="relationship" relationship="viewControllers" id="xhb-nL-3qx"/>
+                        <segue destination="tAw-o5-dtO" kind="relationship" relationship="viewControllers" id="h4J-qY-0IK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYf-Hk-XSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+            <point key="canvasLocation" x="1026" y="56"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="lSv-md-anG">
@@ -173,42 +124,23 @@
                             <outlet property="delegate" destination="H8V-aH-Gp9" id="dYn-g4-QVh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checkout Devices" id="5n6-Pc-H9D">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Proceed" id="Jeh-93-Cxx">
-                                <connections>
-                                    <segue destination="j92-xc-nHb" kind="show" id="7p3-Pf-oUq"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Filter" id="mFG-M9-JOs">
-                                <connections>
-                                    <segue destination="Pga-lJ-607" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="bzZ-mM-ibV"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="Checkout" id="5n6-Pc-H9D">
+                        <barButtonItem key="backBarButtonItem" title=" " id="u7f-BF-GN5"/>
+                        <barButtonItem key="leftBarButtonItem" image="icon-filter" id="mFG-M9-JOs">
+                            <connections>
+                                <segue destination="Pga-lJ-607" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="bzZ-mM-ibV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon-continue" id="Jeh-93-Cxx">
+                            <connections>
+                                <segue destination="j92-xc-nHb" kind="show" id="7p3-Pf-oUq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBQ-F4-hM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="-416"/>
-        </scene>
-        <!--Main Nav-->
-        <scene sceneID="SiO-xA-ded">
-            <objects>
-                <navigationController title="Main Nav" automaticallyAdjustsScrollViewInsets="NO" id="KvH-RC-vQo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mu2-Cx-fuV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L4z-HZ-9v6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gcQ-DR-KoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="319" y="137"/>
+            <point key="canvasLocation" x="2806" y="-463"/>
         </scene>
         <!--Review Checkout-->
         <scene sceneID="faQ-Lj-Dyc">
@@ -302,13 +234,18 @@
                             <outlet property="delegate" destination="j92-xc-nHb" id="MBX-Su-Qm9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Review Checkout" id="LPn-dK-FT2">
-                        <barButtonItem key="rightBarButtonItem" title="Checkout" id="YJE-uP-g0X"/>
+                    <navigationItem key="navigationItem" title="Review" id="LPn-dK-FT2">
+                        <barButtonItem key="rightBarButtonItem" image="icon-checkout" id="YJE-uP-g0X">
+                            <connections>
+                                <segue destination="zQQ-cY-gfV" kind="unwind" unwindAction="returnToCheckoutScreenWithSegue:" id="MPx-9X-xPm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTX-wh-J8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zQQ-cY-gfV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2730" y="-143"/>
+            <point key="canvasLocation" x="3594" y="-129"/>
         </scene>
         <!--Return-->
         <scene sceneID="hT7-iG-yYB">
@@ -380,8 +317,9 @@
                             <outlet property="delegate" destination="gZc-yM-5dZ" id="YgH-mQ-ccA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Return Devices" id="muR-XK-uiF">
-                        <barButtonItem key="rightBarButtonItem" title="Proceed" id="OJP-vN-YJE">
+                    <navigationItem key="navigationItem" title="Return" id="muR-XK-uiF">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Vs0-7a-WeV"/>
+                        <barButtonItem key="rightBarButtonItem" image="icon-continue" id="OJP-vN-YJE">
                             <connections>
                                 <segue destination="ulQ-VA-gnX" kind="show" id="Y5A-6F-bQJ"/>
                             </connections>
@@ -390,7 +328,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsl-N1-qh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="546"/>
+            <point key="canvasLocation" x="2804" y="546"/>
         </scene>
         <!--Review Return-->
         <scene sceneID="6da-qh-toV">
@@ -462,13 +400,18 @@
                             <outlet property="delegate" destination="ulQ-VA-gnX" id="bQo-hi-jeA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Review Return" id="31F-iY-jyN">
-                        <barButtonItem key="rightBarButtonItem" title="Return" id="SRi-fI-Msj"/>
+                    <navigationItem key="navigationItem" title="Review" id="31F-iY-jyN">
+                        <barButtonItem key="rightBarButtonItem" image="icon-return" id="SRi-fI-Msj">
+                            <connections>
+                                <segue destination="ECQ-wq-RYW" kind="unwind" unwindAction="returnToReturnScreenWithSegue:" id="WKg-ux-hek"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQi-c5-hxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ECQ-wq-RYW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2775" y="546"/>
+            <point key="canvasLocation" x="3593" y="546"/>
         </scene>
         <!--Filter-->
         <scene sceneID="oW1-Ti-lNr">
@@ -527,13 +470,18 @@
                             <outlet property="delegate" destination="OJp-u0-qvV" id="Ikd-Yv-a0F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Filter Devices" id="Mag-Hd-n8X">
-                        <barButtonItem key="rightBarButtonItem" title="Apply" id="hGs-l9-r6Q"/>
+                    <navigationItem key="navigationItem" title="Filter" id="Mag-Hd-n8X">
+                        <barButtonItem key="rightBarButtonItem" title="Apply" id="hGs-l9-r6Q">
+                            <connections>
+                                <segue destination="af1-FN-m5I" kind="unwind" unwindAction="dismissFiltersWithSegue:" id="2nI-6N-ybn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inQ-Gr-U6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="af1-FN-m5I" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3564" y="-809"/>
+            <point key="canvasLocation" x="4430" y="-797"/>
         </scene>
         <!--Filter Nav-->
         <scene sceneID="OFc-c9-E9E">
@@ -551,7 +499,52 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2B-1r-mNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728.8000000000002" y="-809.14542728635683"/>
+            <point key="canvasLocation" x="3594" y="-797"/>
+        </scene>
+        <!--Checkout-->
+        <scene sceneID="Ed2-9C-tls">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ROh-Hx-bG5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Checkout" image="icon-checkout" id="hgH-nk-8ae"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bWL-N3-Xfw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H8V-aH-Gp9" kind="relationship" relationship="rootViewController" id="Aap-vU-31u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ird-Wo-73B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="-462.8185907046477"/>
+        </scene>
+        <!--Return-->
+        <scene sceneID="ahv-0M-QnP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tAw-o5-dtO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Return" image="icon-return" id="BiN-1G-7gh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zou-uL-zY5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gZc-yM-5dZ" kind="relationship" relationship="rootViewController" id="i3Y-mU-9c4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbr-w1-lU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="545.57721139430294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-checkout" width="24" height="24"/>
+        <image name="icon-continue" width="24" height="24"/>
+        <image name="icon-filter" width="24" height="24"/>
+        <image name="icon-return" width="24" height="24"/>
+    </resources>
+    <color key="tintColor" red="0.35686274509803922" green="0.69411764705882351" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
 </document>

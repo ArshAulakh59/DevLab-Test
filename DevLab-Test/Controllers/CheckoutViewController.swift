@@ -91,5 +91,9 @@ class CheckoutViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func dismissFilters(segue: UIStoryboardSegue) { }
+    
+    @IBAction func returnToCheckoutScreen(segue: UIStoryboardSegue) { }
 
 }

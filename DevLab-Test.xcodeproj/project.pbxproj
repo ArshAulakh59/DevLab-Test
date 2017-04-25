@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E945A0C71EAF1F84006C7C25 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945A0C51EAF1F84006C7C25 /* DeviceCell.swift */; };
+		E945A0C81EAF1F84006C7C25 /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E945A0C61EAF1F84006C7C25 /* DeviceCell.xib */; };
+		E945A0CA1EAF2A99006C7C25 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945A0C91EAF2A99006C7C25 /* Device.swift */; };
 		E9959BE71EAE4768006FF362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9959BE61EAE4768006FF362 /* AppDelegate.swift */; };
 		E9959BEC1EAE4768006FF362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9959BEA1EAE4768006FF362 /* Main.storyboard */; };
 		E9959BEE1EAE4768006FF362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9959BED1EAE4768006FF362 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E945A0C51EAF1F84006C7C25 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceCell.swift; path = Views/DeviceCell/DeviceCell.swift; sourceTree = "<group>"; };
+		E945A0C61EAF1F84006C7C25 /* DeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeviceCell.xib; path = Views/DeviceCell/DeviceCell.xib; sourceTree = "<group>"; };
+		E945A0C91EAF2A99006C7C25 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Models/Device.swift; sourceTree = "<group>"; };
 		E9959BE31EAE4768006FF362 /* DevLab-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevLab-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9959BE61EAE4768006FF362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9959BEB1EAE4768006FF362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E945A0C31EAF1F4C006C7C25 /* DeviceCell */ = {
+			isa = PBXGroup;
+			children = (
+				E945A0C51EAF1F84006C7C25 /* DeviceCell.swift */,
+				E945A0C61EAF1F84006C7C25 /* DeviceCell.xib */,
+			);
+			name = DeviceCell;
+			sourceTree = "<group>";
+		};
+		E945A0C41EAF1F55006C7C25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E945A0C31EAF1F4C006C7C25 /* DeviceCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E945A0CB1EAF2A9D006C7C25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E945A0C91EAF2A99006C7C25 /* Device.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		E9959BDA1EAE4768006FF362 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +98,8 @@
 				E9959BE61EAE4768006FF362 /* AppDelegate.swift */,
 				E9959BF81EAE5A6B006FF362 /* UI */,
 				E9959BFA1EAE5A77006FF362 /* Controllers */,
+				E945A0CB1EAF2A9D006C7C25 /* Models */,
+				E945A0C41EAF1F55006C7C25 /* Views */,
 				E9959BF91EAE5A71006FF362 /* Resources */,
 			);
 			path = "DevLab-Test";
@@ -166,6 +199,7 @@
 				E9959BF11EAE4768006FF362 /* LaunchScreen.storyboard in Resources */,
 				E9959BEE1EAE4768006FF362 /* Assets.xcassets in Resources */,
 				E9959BEC1EAE4768006FF362 /* Main.storyboard in Resources */,
+				E945A0C81EAF1F84006C7C25 /* DeviceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +213,8 @@
 				E9959C021EAE5B20006FF362 /* ReviewCheckoutViewController.swift in Sources */,
 				E9959BE71EAE4768006FF362 /* AppDelegate.swift in Sources */,
 				E9959C041EAE5B37006FF362 /* ReturnViewController.swift in Sources */,
+				E945A0CA1EAF2A99006C7C25 /* Device.swift in Sources */,
+				E945A0C71EAF1F84006C7C25 /* DeviceCell.swift in Sources */,
 				E9959BFE1EAE5AF0006FF362 /* CheckoutViewController.swift in Sources */,
 				E9959C001EAE5B0D006FF362 /* FilterViewController.swift in Sources */,
 				E9959BFC1EAE5A9B006FF362 /* HomeViewController.swift in Sources */,
@@ -307,10 +343,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H8HMJT36V7;
 				INFOPLIST_FILE = "DevLab-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AA.DevLab-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -320,10 +358,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H8HMJT36V7;
 				INFOPLIST_FILE = "DevLab-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AA.DevLab-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
