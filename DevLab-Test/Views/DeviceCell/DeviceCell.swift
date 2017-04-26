@@ -8,13 +8,13 @@
 
 import UIKit
 
-struct DeviceViewModel {
+struct DeviceCellViewModel {
     /// Properties
     var device: Device
     var addable: Bool
     
     /// Accessibility Properties
-    var image: UIImage? { return device.image }
+    var image: UIImage? { return device.image ?? UIImage(named: "icon-device") }
     var identifier: String { return device.identifier }
     var make: String { return device.make }
     var model: String { return device.model }
@@ -34,17 +34,18 @@ class DeviceCell: UITableViewCell {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var removeButton: UIButton!
-    
     /// Variables
-    var viewModel: DeviceViewModel! {
+    var viewModel: DeviceCellViewModel! {
         didSet {
             configure(with: viewModel)
         }
     }
-    
+    /// Constants
+    static let reuseIdentifier = String(describing: DeviceCell.self)
+
     // MARK: Configuration
 
-    func configure(with viewModel: DeviceViewModel?) {
+    func configure(with viewModel: DeviceCellViewModel?) {
         guard let viewModel = viewModel else {
             /// Remove Data
             iconImageView.image = nil

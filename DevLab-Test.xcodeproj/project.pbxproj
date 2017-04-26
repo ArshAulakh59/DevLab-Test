@@ -14,7 +14,6 @@
 		E9959BEC1EAE4768006FF362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9959BEA1EAE4768006FF362 /* Main.storyboard */; };
 		E9959BEE1EAE4768006FF362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9959BED1EAE4768006FF362 /* Assets.xcassets */; };
 		E9959BF11EAE4768006FF362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9959BEF1EAE4768006FF362 /* LaunchScreen.storyboard */; };
-		E9959BFC1EAE5A9B006FF362 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9959BFB1EAE5A9B006FF362 /* HomeViewController.swift */; };
 		E9959BFE1EAE5AF0006FF362 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9959BFD1EAE5AF0006FF362 /* CheckoutViewController.swift */; };
 		E9959C001EAE5B0D006FF362 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9959BFF1EAE5B0D006FF362 /* FilterViewController.swift */; };
 		E9959C021EAE5B20006FF362 /* ReviewCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9959C011EAE5B20006FF362 /* ReviewCheckoutViewController.swift */; };
@@ -32,7 +31,6 @@
 		E9959BED1EAE4768006FF362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9959BF01EAE4768006FF362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9959BF21EAE4768006FF362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9959BFB1EAE5A9B006FF362 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		E9959BFD1EAE5AF0006FF362 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckoutViewController.swift; path = Controllers/CheckoutViewController.swift; sourceTree = "<group>"; };
 		E9959BFF1EAE5B0D006FF362 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterViewController.swift; path = Controllers/FilterViewController.swift; sourceTree = "<group>"; };
 		E9959C011EAE5B20006FF362 /* ReviewCheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCheckoutViewController.swift; path = Controllers/ReviewCheckoutViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 		E9959BFA1EAE5A77006FF362 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9959BFB1EAE5A9B006FF362 /* HomeViewController.swift */,
 				E9959BFD1EAE5AF0006FF362 /* CheckoutViewController.swift */,
 				E9959BFF1EAE5B0D006FF362 /* FilterViewController.swift */,
 				E9959C011EAE5B20006FF362 /* ReviewCheckoutViewController.swift */,
@@ -217,7 +214,6 @@
 				E945A0C71EAF1F84006C7C25 /* DeviceCell.swift in Sources */,
 				E9959BFE1EAE5AF0006FF362 /* CheckoutViewController.swift in Sources */,
 				E9959C001EAE5B0D006FF362 /* FilterViewController.swift in Sources */,
-				E9959BFC1EAE5A9B006FF362 /* HomeViewController.swift in Sources */,
 				E9959C061EAE5B4B006FF362 /* ReviewReturnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
