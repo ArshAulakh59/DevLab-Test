@@ -6,7 +6,7 @@
 //  Copyright © 2017 AA. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: Enums
 
@@ -19,15 +19,15 @@ enum DeviceOS {
     
     var stringValue: String {
         switch self {
-        case iOS:
+        case .iOS:
             return "iOS"
-        case Android:
+        case .Android:
             return "Android"
-        case Windows:
+        case .Windows:
             return "Windows"
-        case Blackberry:
+        case .BlackberryOS:
             return "Blackberry OS"
-        case Other(let name):
+        case .Other(let name):
             return name
         }
     }
@@ -41,13 +41,13 @@ enum DeviceType {
     
     var stringValue: String {
         switch self {
-        case Phone:
+        case .Phone:
             return "Phone"
-        case Tablet:
+        case .Tablet:
             return "Tablet"
-        case Wearable:
+        case .Wearable:
             return "Wearable"
-        case Other(let name):
+        case .Other(let name):
             return name
         }
     }
@@ -56,7 +56,7 @@ enum DeviceType {
 // MARK: Model
 
 struct Device {
-    var image: UIImage = UIImage(named: "icon-device")!
+    var image: UIImage?
     var identifier: String
     var make: String
     var model: String

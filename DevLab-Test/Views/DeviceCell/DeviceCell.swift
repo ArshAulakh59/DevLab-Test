@@ -14,7 +14,7 @@ struct DeviceViewModel {
     var addable: Bool
     
     /// Accessibility Properties
-    var image: UIImage { return device.image }
+    var image: UIImage? { return device.image }
     var identifier: String { return device.identifier }
     var make: String { return device.make }
     var model: String { return device.model }
@@ -59,7 +59,7 @@ class DeviceCell: UITableViewCell {
             return
         }
         
-        iconImageView.image = viewModel.image
+        iconImageView.image = viewModel.image ?? UIImage(named: "icon-device")!
         identifierLabel.text = viewModel.identifier
         makeLabel.text = viewModel.make
         modelLabel.text = viewModel.model
